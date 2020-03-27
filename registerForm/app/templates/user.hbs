@@ -1,0 +1,20 @@
+<h2>List</h2>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |user|}}
+    <tr>
+      <th>{{user.id}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
